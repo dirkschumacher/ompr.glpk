@@ -1,0 +1,16 @@
+Package: ompr.glpk
+Type: Package
+Title: OMPR bindings for GLPK
+Version: 0.1.0
+Author: Dirk Schumacher
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+License: Gplv3
+LazyData: TRUE
+Imports:
+  ompr,
+  Rglpk
+Suggets:
+  testthat,
+  magrittr
+RoxygenNote: 5.0.1

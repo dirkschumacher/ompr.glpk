@@ -1,0 +1,5 @@
+library(testthat)
+library(magrittr)
+library(ompr)
+library(Rglpk)
+test_check("ompr.glpk")
