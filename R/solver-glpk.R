@@ -115,14 +115,12 @@ configure_glpk_solver <- function(verbose = FALSE) {
       }
     })
 
-    # this will become a separte component
-    stopifnot(require("Rglpk"))
     glpk_column_types <- column_types
     glpk_column_types[glpk_column_types == "binary"] <- "B"
     glpk_column_types[glpk_column_types == "integer"] <- "I"
     glpk_column_types[glpk_column_types == "continuous"] <- "C"
 
-    result <- Rglpk_solve_LP(obj_vector,
+    result <- Rglpk::Rglpk_solve_LP(obj_vector,
                              constraint_matrix,
                              constraint_dir,
                              constraint_rhs,
